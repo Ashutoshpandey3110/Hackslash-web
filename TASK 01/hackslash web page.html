@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+      
+
+        body{
+            height: 100%;
+            width: 100%;
+           
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .parent{
+            height: 100%;
+            width: 100vw;
+            background-color:aliceblue ;
+          
+           
+        }
+
+       
+
+        .maincontainer{
+           
+            height: 100%;
+            width: 78rem;
+            margin: 0 auto;
+            font-family: 'Roboto Slab', serif;
+            padding-left: 4.8rem;
+
+        }
+
+        .heading{
+            padding: 1.66rem;
+            
+            padding-bottom: 3.9rem;
+            
+           
+        }
+        .leftpart1{
+            display: flex;
+            flex-direction: column;
+            gap: 2.75rem;
+            width: 450px;
+        }
+
+        .Collaborate{
+            font-size: 1.8rem;
+            color: #212529;
+            transition: all 0.2s ease-out 0s;
+            cursor: pointer;
+            font-weight: bold;
+            padding-right: 2rem;
+           
+        }
+                
+
+        .Collaborate:hover{
+            transform: scale(1.02);
+            color: #919191;
+        }
+
+        .content1{
+            display: flex;
+            gap: 5rem;
+            animation: slide-up .5s ease-in
+        }
+
+        @keyframes slide-up {
+
+    0%{
+        transform: translateY(10rem);
+        opacity: 0.1;
+    }
+    to{
+        transform: translateY(0);
+    }
+            
+        }
+        .content2{
+            display: flex;
+            gap: 5rem;
+            animation: slide-up2 0.9s ease-in
+        }
+
+        @keyframes slide-up2  {
+
+       0%{
+       transform: translateY(10rem);
+    
+       opacity: 0.2;}
+
+       to{
+        transform: translateY(0);
+         }
+        }
+
+
+        .content3{
+            display: flex;
+            gap: 5rem;
+            animation: slide-up3 1.2s ease-in
+        }
+
+
+        @keyframes slide-up3  {
+
+         0%{
+           transform: translateY(10rem);
+           opacity: 0.25;}
+
+         to{
+            transform: translateY(0);
+               }
+            }
+
+        .content4{
+            display: flex;
+            gap: 5rem;
+            animation: slide-up4 1.4s ease-in
+        }
+
+        @keyframes slide-up4  {
+
+       0%{
+            transform: translateY(10rem);
+            opacity: 0.3;}
+
+         to{
+           transform: translateY(0);
+              }
+               }
+
+       
+
+        .RPA{
+            font-size: 58px;
+            font-weight: 300;
+            line-height: 1.2em;
+        }
+
+        .paraclass1{
+            cursor: pointer;
+        }
+
+        .paraclass1:hover{
+            transform: scale(1.04);
+            box-shadow: 0 0.4px 0.1px rgba(0,0,0,0.2);
+
+        }
+
+        .futurepara{
+            font-size: 1.3rem;
+            font-weight: 540;
+            max-width: 900px;
+        }
+
+        .rightpart1{
+            position: relative;
+            height: 320px;
+            width: 531px;
+           
+            
+        }
+
+        .image{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            transition: transform 1.2s;
+             transform-style: preserve-3d;
+
+
+        }
+
+        .image:hover{
+            transform: rotateY(180deg);
+        }
+
+        .intermediate{
+            display: flex;
+           align-items: center;
+            gap: 2rem;
+            cursor: pointer;
+        }
+
+        .alpha{
+            font-weight: 900;
+            font-size: 1.5rem;
+     
+        }
+        .alpha:hover{
+          
+            color: #919191;
+        }
+
+        .arrow:hover{
+
+        opacity: 0.7;
+    }
+
+       .main{
+        display:flex;
+        flex-direction: column;
+        gap: 2rem;
+       }
+
+       @media (max-width:1225px){
+
+        .parent{
+            width: 100vw;
+        }
+
+        .content2{
+            flex-direction: column;
+            gap: 2rem;
+           margin: 0 auto;
+        }
+        .content3{
+            flex-direction: column;
+            gap: 2rem;
+           margin: 0 auto;
+        }
+        .content4{
+            flex-direction: column;
+            gap: 2rem;
+           margin: 0 auto;
+        }
+        .content1{
+            flex-direction: column;
+            gap: 2rem;
+           margin: 0 auto;
+        }
+
+        .alpha{
+            color: rgb(44, 44, 238);
+        }
+
+        .heading{
+            padding-left: 20.54rem;
+        }
+
+        
+       }
+
+       
+
+    
+       
+      
+        
+
+        
+
+
+
+        
+    </style>
+</head>
+<body>
+
+
+   <div class="parent">
+
+        <div class="maincontainer">
+
+           <div class="heading">
+
+            <h2 class="Collaborate" >  Lets Collaborate   </h2>
+
+           </div>
+
+           <div class="main">
+
+        
+                 <!-- content1------ -->
+
+
+
+                 <div class="content1">
+
+                    <div class="leftpart1">
+            
+                  <div class="paraclass1"> 
+                     <span class="RPA">AI + RPA is what we do</span>
+                    </div>
+            
+                 <div class="paraclass2">
+                    <p class="futurepara">Future-Proof your business. Drive efficiency, profitability and deliver on customer experience</p>
+                 </div>
+            
+                    <div class="intermediate">
+            
+                        <div class="paraclass">
+            
+                           <p class="alpha">AI + RPA Automation</p>
+                           
+                        </div>
+            
+                        <div class="imageinter">
+                            <img src="imapointer.d3b0698f3ee3843a2a593e5683680e53 (1).svg" alt="" class="arrow">
+                        </div>
+            
+                        
+                    </div>
+            
+                    </div>
+            
+                 <div class="rightpart1">
+            
+                    <img src="image01/s1-image.d6d4b7703bc14f99bb7e.jpg" alt="" class="image">
+            
+                 </div>
+            
+                </div>
+        
+                     <!-- content2 -->
+        
+                     <div class="content2">
+        
+                        <div class="leftpart1">
+                
+                      <div class="paraclass1"> 
+                         <span class="RPA">Make Bolder Choices</span>
+                        </div>
+                
+                     <div class="paraclass2">
+                        <p class="futurepara">Digital focused strategies to realize market-changing ideas</p>
+                     </div>
+                
+                        <div class="intermediate">
+                
+                            <div class="paraclass">
+                
+                               <p class="alpha">Build Better Apps</p>
+                               
+                            </div>
+                
+                            <div class="imageinter">
+                                <img src="pointer.d3b0698f3ee3843a2a593e5683680e53 (1).svg" alt="" class="arrow">
+                            </div>
+                
+                            
+                        </div>
+                
+                        </div>
+                
+                     <div class="rightpart1">
+                
+                        <img src="image01/s2-image.e0b53b689fd9881066ec.png" alt="" class="image">
+                
+                     </div>
+                
+                    </div>
+        
+        
+                      <!-- content3-->
+        
+                      <div class="content3">
+        
+                        <div class="leftpart1">
+                
+                      <div class="paraclass1"> 
+                         <span class="RPA">Innovate With Speed</span>
+                        </div>
+                
+                     <div class="paraclass2">
+                        <p class="futurepara">Create higher quality software, deliver on customer expectations and business goals</p>
+                     </div>
+                
+                        <div class="intermediate">
+                
+                            <div class="paraclass">
+                
+                               <p class="alpha">DevOps
+
+                               </p>
+                               
+                            </div>
+                
+                            <div class="imageinter">
+                                <img src="pointer.d3b0698f3ee3843a2a593e5683680e53 (1).svg" alt="" class="arrow">
+                            </div>
+                
+                            
+                        </div>
+                
+                        </div>
+                
+                     <div class="rightpart1">
+                
+                        <img src="image01/s3-image.8bc14b86ce6eff22c3cb.jpg" alt="" class="image">
+                
+                     </div>
+                
+                    </div>
+        
+                      <!-- content4-->
+        
+                      <div class="content4">
+        
+                        <div class="leftpart1">
+                
+                      <div class="paraclass1"> 
+                         <span class="RPA">Embrace Cloud</span>
+                        </div>
+                
+                     <div class="paraclass2">
+                        <p class="futurepara">With Cloud-First accelerate innovation and optimize performance</p>
+                     </div>
+                
+                        <div class="intermediate">
+                
+                            <div class="paraclass">
+                
+                               <p class="alpha">Cloud Services</p>
+                               
+                            </div>
+                
+                            <div class="imageinter">
+                                <img src="pointer.d3b0698f3ee3843a2a593e5683680e53 (1).svg" alt="" class="arrow">
+                            </div>
+                
+                            
+                        </div>
+                
+                        </div>
+                
+                     <div class="rightpart1">
+                
+                        <img src="image01/s4-image.e02e593de8014f43f419.jpg" alt="" class="image">
+                
+                     </div>
+                
+                    </div>
+          </div>
+
+          
+
+
+        </div>
+
+       
+
+   </div>
+    
+</body>
+</html>

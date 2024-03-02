@@ -1,0 +1,1205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap');
+
+
+:root {
+    --primary-color: #6366F1;
+    --accent-color: #3f83f8;
+    --text-color: #333333;
+    --link-color: #2563eb;
+    --background-color: #ffffff;
+    --light-gray: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    padding: .1rem;
+    background-color: var(--background-color);
+    align-items: center;
+    
+
+}
+.parent{
+    width: 100%;
+    height: 100%;
+}
+
+.image_unesco{
+    height: 30px;
+    width: 50px;
+    border-radius: 10rem;
+    gap: 1rem;
+    
+   
+
+}
+
+.header_content{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 1rem;
+    align-items: center;
+}
+
+.unesco{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--text-color);
+
+}
+
+.unesco:hover{
+
+    color: var(--dark-gray);
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 1.2rem;
+}
+
+.nav_link{
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 590;
+}
+
+.nav_link:hover{
+    color: var(--link-color);
+}
+
+.contact{
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+
+.contact:hover{
+    background-color: var(--link-color);
+
+}
+
+@media (max-width:1174px) {
+
+    .nav ,.contact{
+       display: none;
+    }
+    
+}
+
+.menu_button{
+    display: none;
+    background-color: var(--background-color);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1.1rem;
+
+
+}
+@media  (max-width:1174px) {
+    .menu_button{
+        display: block;
+    
+    }
+    
+}
+.menu{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.maincontent{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.part2{
+    text-align: center;
+    margin: 1.8rem;
+    animation: lefttoright 1.5s ease forwards 0s;
+}
+
+.part2span{
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--text-color);
+   
+}
+
+@keyframes lefttoright {
+
+    0%{
+        opacity: 0.8;
+        transform: translateX(-100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+
+    
+}
+
+
+
+.part2span:hover{
+    color: var(--dark-gray);
+
+}
+
+.map{
+    max-width: 80%;
+    margin-top:10rem;
+    overflow: scroll;
+    height: 370px;
+    margin: 0 auto;
+    cursor: grabbing;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    animation: lefttoright 1.5s ease forwards 0s;
+}
+
+.descripofindia{
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    font-weight: 650;
+    color: var(--dark-gray);
+    transition: all 1s linear 0s;
+    cursor: pointer;
+}
+
+.descripofindia:hover{
+
+    transform: scale(1.02);
+
+}
+
+.paraofdesc{
+    margin: 0 auto;
+    font-size: 1.6rem;
+    font-weight: 800;
+    padding: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+  
+
+}
+   .paraofdesc:hover{
+    color: var(--dark-gray);
+    
+}
+
+.alpha{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-color);
+    cursor: pointer;
+    margin: 1.2rem;
+
+}
+
+.mandir{
+    margin-top: 1.2rem;
+    gap: 2rem;
+    display: flex;
+   
+    
+}
+
+.Ram_mandir{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.mandirdesc{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    width: 700px;
+}
+
+.imagemain{
+     height: 650px;
+     width: 600px;
+     border: none;
+     border-radius: 3rem;
+     animation: lefttoright 3.5s ease forwards 0s;
+    
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.extra{
+
+    display: flex;
+    flex-direction: row;
+    gap: 2.3rem;
+
+}
+
+.extrapara{
+
+    max-width: 780px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.rightsextra{
+
+    height: 80px;
+    width: 160px;
+    position: relative;
+    border: none;
+    border-radius: 1.02rem;
+    overflow-y: hidden;
+}
+
+.extraimage{
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all 1.5s linear 0s;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border: none;
+    border-radius: 1.02rem;
+
+}
+
+.extraimage:hover{
+    transform: scale(1.3);
+}
+
+.summary{
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+
+}
+
+.section{
+    margin: 2rem 3.5rem;
+    cursor: pointer;
+}
+
+.section:hover{
+    color: var(--dark-gray);
+
+}
+
+.reviewheading{
+    color: white;
+    border: none;
+    border-radius: 3rem;
+    max-width: 450px;
+    background-color: var(--primary-color);
+    margin: 1rem auto;
+    padding: 1.4rem;
+    text-align: center;
+    transition: all 1.4s ease-out 0s;
+    cursor: pointer;
+    
+}
+
+
+
+.reviewheading:hover{
+    transform: scale(1.2);
+}
+
+.review_main_content{
+    display: flex;
+    gap: 6rem;
+    
+
+}
+
+.right_text{
+    width:1200px;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.avatarimage{
+    height: 9rem;
+    width: 9rem;
+    transition: all 1s linear 0s;
+}
+
+.avatarimage:hover{
+    transform: scale(1.12);
+}
+
+.headingalpha{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--text-color);
+    transition: all 1.2s;
+    cursor: pointer;
+    margin-left:1rem ;
+   
+}
+
+.headingalpha:hover{
+    transform: scale(1.02);
+    color: var(--gray);
+    
+}
+
+.paraalpha{
+    margin-left: 1rem;
+    font-weight: 400;
+    color: var(--text-color);
+    
+
+}
+                                      /* experiment section */
+
+   
+                                      .cards{
+                                        /* background-image: url(cttj2n2_ram-temple-mandir_625x300_22_January_24.webp); */
+                                        background-size: cover;
+                                        height: 600px;
+                                        width: 76%;
+                                        margin: 0 auto;
+                                        color: white;
+                                        position: relative;
+                                        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                                        z-index: 1;
+                                        border-radius: 2rem;
+                                        margin-left: 2.2rem;
+                                        
+                                   
+                                    }
+
+
+                                    #card_ajanta{
+                                        background-image: url(images/Ajanta-Caves-Maharashtra-India.webp);
+                                        margin-left: 17.2rem;
+                                    }
+
+                                    #card_ellora{
+                                        background-image:url(images/Ellora_Caves\,_India\,_Kailasanatha_Temple_2.jpg);
+                                    }
+
+                                    
+                                    #card_AgraFort{
+                                        background-image: url(images/Agra_03-2016_10_Agra_Fort.jpg);
+                                        margin-left: 17.2rem;
+                                    }
+
+                                    #card_Tajmahal{
+                                        background-image: url(images/1280px-Taj_Mahal\,_Agra\,_India_edit3.jpg);
+                                    }
+
+                                    #card_suntemple{
+                                        background-image: url(images/Konarka_Temple.jpg);
+                                        margin-left: 17.2rem;
+                                    }
+                                    #card_Mahabalipuram{
+                                        background-image: url(images/Mahabodhitemple.jpg);
+                                    }
+                                    #card_Kaziranga {
+                                        background-image: url(images/1024px-Beauty_of_Kaziranga_National_Park.jpg);
+                                        margin-left: 17.2rem;
+                                    }
+                                    #card_ManasWildlifeSanctuary{
+                                        background-image: url(images/Herd_of_Elephant_in_Manas.jpg);
+                                    }
+                                    #card_KeoladeoNationalPark{
+                                        background-image: url(images/Bar-headed_Geese-_Bharatpur_I_IMG_8335.jpg);
+                                        margin-left: 17.2rem;
+                                    }
+                                    #card_ChurchesandConventsofGoa{
+                                        background-image: url(images/Old_Goa\,_Se_Cathedral\,_Panoramic_view.jpg);
+                                    }
+                                    #card_KhajurahoGroupofMonuments{
+                                        background-image: url(images/Lakshmana_Temple_24.jpg);
+                                        margin-left: 17.2rem;
+                                    }
+                                    #card_Hampi{
+                                        background-image: url(images/1024px-Hampi_virupaksha_temple.jpg);
+                                    }
+                                    #card_FatehpurSikri{
+                                        background-image: url(images/Fatehput_Sikiri_Buland_Darwaza_gate_2010.jpg);
+                                        margin-left: 17.2rem;
+                                    }
+                                    #card_Pattadakal{
+                                        background-image: url(images/1024px-Pattadakal_000.jpg);
+                                    }
+                                    #card_ElephantaCaves{
+                                        background-image: url(images/Trimurti\,_Cave_No._1\,_Elephanta_Caves_-_1.jpg);
+                                        margin-left: 17.2rem;
+                                    }
+                                    #card_GreatLivingCholaTemples{
+                                        background-image: url(images/1024px-Le_temple_de_Brihadishwara_\(Tanjore\,_Inde\)_\(14354574611\).jpg);
+                                    }
+                                    #card_SundarbansNationalPark{
+                                        background-image: url(images/Sundarban_Tiger.jpg);
+                                        margin-left: 17.2rem;
+                                    }
+                                    #card_NandaDevi{
+                                        background-image: url(images/Valley_of_flowers_uttaranchal_full_view.jpg);
+                                    }
+                                    #card_Sanchi{
+                                        background-image: url(images/Sanchi1_N-MP-220.jpg);
+                                        margin-left: 17.2rem;
+                                    }
+                                    #card_HumayunsTomb{
+                                        background-image: url(images/himayus\ tomb.jpg);
+                                        
+                                    }
+                                    #card_QutbMinar {
+                                        background-image: url(images/Qutab_Minar_mausoleum.jpg);
+                                        margin-left: 17.2rem;
+                                    }
+                                    /* #card_MountainRailwaysofIndia{
+                                        background-image: url(Mountain\ Railways\ of\ India\ \(Darjeeling\,\ Nilgiri\,\ Kalka-Shimla\).jpg);
+                                        
+                                    } */
+                                    #card_MahabodhiTempleComplex{
+                                        background-image: url(images/Mahabodhitemple.jpg);
+                                    }
+                                    #card_RockSheltersofBhimbetka{
+                                        background-image: url(images/Rock_Shelter_8\,_Bhimbetka_02.jpg);
+                                        margin-left: 17.2rem;
+                                    }
+                                    #card_ChhatrapatiShivajiTerminus{
+                                        background-image: url(images/Chhatrapati_shivaji_terminus\,_esterno_01.jpg);
+                                    }
+                                    #card_Champaner-Pavagadh{
+                                        background-image: url(images/Jama_masjid_in_Champaner.JPG);
+                                        margin-left: 17.2rem;
+                                    }
+                                    #card_RedFortComplex{
+                                        background-image: url(images/Red_Fort_in_Delhi_03-2016_img1.jpg);
+                                    }
+                                    #card_TheJantarMantar{
+                                        background-image: url(images/Jantar_Mantar_at_Jaipur.jpg);
+                                        margin-left: 17.2rem;
+                                    }
+                                    #card_WesternGhats{
+                                        background-image: url(images/Pampadumshola.jpg);
+                                    }
+                                    #card_HillFortsofRajasthan{
+                                        background-image: url(images/Amber_Fort_\(आमेर_का_किला_\).jpg);
+                                        margin-left: 17.2rem;
+                                    }
+                                    #card_Rani-ki-Vav{
+                                        background-image: url(images/Rani_ki_vav_02.jpg);
+                                    }
+                                    #card_GreatHimalayaNationalPark{
+                                        background-image: url(images/1024px-Great_Himalayan_National_Park_Mountain_View.jpg);
+                                        margin-left: 17.2rem;
+                                    }
+                                    #card_ArchaeologicalSiteofNalanda{
+                                        background-image: url(images/Temple_No.-_3\,_Nalanda_Archaeological_Site.jpg);
+
+                                    }
+                                    #card_Khangchendzonga{
+                                        background-image: url(images/Abhishek532_SamitiReflections.jpg);
+                                        margin-left: 17.2rem;
+                                    }
+                                    #card_TheArchitecturalWork
+                                            {
+                                        background-image: url(images/Palace_of_Assembly_Chandigarh_2006.jpg);
+                                    }
+                                    #card_HistoricCity{
+                                        background-image: url(images/Sidi_Saiyyed_Mosque\,_Ahmedabad.jpg);
+                                        margin-left: 17.2rem;
+                                    }
+                                    #card_VictorianGothic{
+                                        background-image: url(images/Mumbai_03-2016_40_Bombay_High_Court.jpg);
+                                    }
+                                    #card_JaipurCity{
+                                        background-image: url(images/Jaipur\ City.jpg);
+                                        margin-left: 17.2rem;
+                                    }
+                                    #card_KakatiyaRudreshwar{
+                                        background-image: url(images/Ramappa_Temple_02.jpg);
+                                    }
+                                    #card_Dholavira{
+                                        background-image: url(images/Dholavira-1.jpg);
+                                        margin-left: 17.2rem;
+                                    }
+                                    #card_Santiniketan{
+                                        background-image: url(images/Santiniketan_Prayer_Hall.jpg);
+                                    }
+                                    #card_Hoysalas{
+                                        background-image: url(images/1024px-Le_temple_de_Chennakesava_\(Somanathapura\,_Inde\)_\(14465165685\).jpg);
+                                        margin-left: 17.2rem;
+                                    }
+
+
+                            
+                                    .cards::before{
+                            
+                                        content: "";
+                                        top: 0;
+                                        left: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        transform-origin: left;
+                                        transform: scaleX(0);
+                                        transition: all 0.6s linear 0s;
+                                        background: linear-gradient(45deg, #e3a464, #7084e7be, #4b62d47c);
+
+                                        
+                                        position: absolute;
+                                        z-index:-1;
+                            
+                                    }
+
+
+                                   
+                            
+                                    .cards:hover::before{
+                            
+                                        transform: scaleX(1);
+                                        overflow: hidden;
+                                        border-radius: 2rem;
+                                       
+                                    }
+
+                                    .heading_para_tool{
+                                        font-size: 1.14rem;
+
+                                    }
+                            
+                                    
+                            
+                                    .cardnumberright{
+                                        font-size: 120px;
+                                        font-weight: 600;
+                                        right:-40px;
+                                        top:-45px;
+                                        text-align: center;
+                                        margin-left: 56rem;
+                            
+                                    }
+                            
+                                    .cardnumberright:hover{
+                            
+                                        color: black;
+                            
+                                    }
+                            
+                                    
+                            
+                                    .description_content{
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        gap: 3rem;
+                                      transition: all 0.7s;
+                                      max-width: 78%;
+                                      margin: 0 auto;
+                                      margin-top: 3rem;
+                                    }
+                            
+                                    .description_content:hover{
+                                        /* color:black; */
+                                        transform: scale(1.02);
+                            
+                                    }
+                            
+                                    
+                            
+                                    .button{
+                                        background-color: #e84949;                                     
+                                         color: white;
+                                       padding: 0.8rem 2.3rem;
+                                       font-size: 18px;
+                                       font-weight: 700;
+                                       width: 350px;
+                                       position: relative;
+                                       z-index: 1;
+                                       cursor: pointer;
+                                    }
+                            
+                                    .button::before{
+                            
+                                        content: "";
+                                        background-color: #1f1f1f;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        z-index: -1;
+                                      transform: scaleX(0);
+                                      transform-origin: left;
+                                      transition: all 1.2s linear 0s;
+                            
+                                    }
+                            
+                                    .heading_para{
+                                        font-size: 1.6rem;
+                                        font-weight: 600;
+                                        
+                                    }
+                            
+                                    .button:hover::before{
+                            
+                                        transform: scaleX(1);
+                                    }   
+                                    
+                                    
+                                    /* #card_right{
+                                        margin:0 auto ;
+
+                                        margin-left: 17rem;
+                                    } */
+
+                                    #card_number_left{
+                                        margin: 0 auto;
+                                        margin-right: 54rem;
+                                    }
+                                    .heritages{
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 2rem;
+                                    }
+
+                                    .footer{
+                                        width: 100vw;
+                                        margin-top: 2rem;
+                                        margin-bottom: 1.5rem;
+                                        box-shadow: 4px 6px 0px -4px rgba(0,0,0,0.12),0px 1px 2px 0px rgba(0,0,0,0.24);
+                                    }
+
+                                    .footer_content{
+                                        max-width: 1280px;
+                                        margin: 0 auto;
+                                    }
+
+                                    .footer_descrip{
+                                        display: grid;
+                                        grid-template-columns: repeat(3,1fr);
+                                        gap: 3.5rem;
+                                    }
+
+                                    .row_desc{
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 2.5rem;
+                                        font-weight: 400;
+                                        /* color: var(--dark-gray); */
+
+                                    }
+
+                                    .row03_desc{
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 2.5rem;
+
+                                    }
+
+                                    .con_tact{
+                                        color: var(--dark-gray);
+                                        font-weight: 400;
+                                        cursor: pointer;
+                                        transition: all 0.4s linear 0s;
+                                    }
+
+                                    .con_tact:hover{
+                                        transform: scale(0.8);
+                                        color: var(--gray);
+                                    }
+
+                                    .headings_footer{
+                                        font-size: 1.8rem;
+                                        font-weight: 700;
+                                        cursor: pointer;
+                                        color: var(--text-color);
+                                        transition: all 0.3s linear 0s;
+                                    }
+
+                                    .headings_footer:hover{
+                                        color: var(--gray);
+                                        transform: scale(0.9);
+                                    }
+
+                                    .footer_rights{
+                                       margin: 0 auto;
+                                       margin-bottom: 2rem;
+                                    }
+
+                                    
+
+                                    .rights{
+                                        text-align: center;
+                                        font-size: 1.02rem;
+                                        font-weight: 600;
+                                        color: var(--text-color);
+                                        margin-left: 4rem;
+                                    }
+
+
+                                    @media (max-width:1373px) {
+
+                                        .heritages{
+                                           
+                                            flex-direction: column;
+                                            gap: 2rem;
+                                        }
+
+                                        #card_ajanta{
+                                            margin: 0 auto;
+                                        }
+                                        #card_AgraFort{
+                                            margin: 0 auto;
+                                            
+                                        }
+    
+                                        #card_Tajmahal{
+                                            margin: 0 auto;
+                                        }
+    
+                                        #card_suntemple{
+                                            margin: 0 auto;
+                                        }
+                                        #card_Mahabalipuram{
+                                            margin: 0 auto;
+                                        }
+                                        #card_Kaziranga {
+                                            margin: 0 auto;
+                                        }
+                                        #card_ManasWildlifeSanctuary{
+                                            margin: 0 auto;
+                                        }
+                                        #card_KeoladeoNationalPark{
+                                            margin: 0 auto;
+                                        }
+                                        #card_ChurchesandConventsofGoa{
+                                            margin: 0 auto;
+                                        }
+                                        #card_KhajurahoGroupofMonuments{
+                                            margin: 0 auto;
+                                        }
+                                        #card_Hampi{
+                                            margin: 0 auto;
+                                        }
+                                        #card_FatehpurSikri{
+                                            margin: 0 auto;
+                                        }
+                                        #card_Pattadakal{
+                                            margin: 0 auto;
+                                        }
+                                        #card_ElephantaCaves{
+                                            margin: 0 auto;
+                                        }
+                                        #card_GreatLivingCholaTemples{
+                                            margin: 0 auto;
+                                        }
+                                        #card_SundarbansNationalPark{
+                                            margin: 0 auto;
+                                        }
+                                        #card_NandaDevi{
+                                            margin: 0 auto;
+                                        }
+                                        #card_Sanchi{
+                                            margin: 0 auto;
+                                        }
+                                        #card_HumayunsTomb{
+                                            margin: 0 auto;
+                                            
+                                        }
+                                        #card_QutbMinar {
+                                            margin: 0 auto;
+                                        }
+                                        /* #card_MountainRailwaysofIndia{
+                                            background-image: url(Mountain\ Railways\ of\ India\ \(Darjeeling\,\ Nilgiri\,\ Kalka-Shimla\).jpg);
+                                            
+                                        } */
+                                        #card_MahabodhiTempleComplex{
+                                            margin: 0 auto;
+                                        }
+                                        #card_RockSheltersofBhimbetka{
+                                            margin: 0 auto;
+                                        }
+                                        #card_ChhatrapatiShivajiTerminus{
+                                            margin: 0 auto;
+                                        }
+                                        #card_Champaner-Pavagadh{
+                                            margin: 0 auto;
+                                        }
+                                        #card_RedFortComplex{
+                                            margin: 0 auto;
+                                        }
+                                        #card_TheJantarMantar{
+                                            margin: 0 auto;
+                                        }
+                                        #card_WesternGhats{
+                                            margin: 0 auto;
+                                        }
+                                        #card_HillFortsofRajasthan{
+                                            margin: 0 auto;
+                                        }
+                                        #card_Rani-ki-Vav{
+                                            margin: 0 auto;
+                                        }
+                                        #card_GreatHimalayaNationalPark{
+                                            margin: 0 auto;
+                                        }
+                                        #card_ArchaeologicalSiteofNalanda{
+                                            margin: 0 auto;
+    
+                                        }
+                                        #card_Khangchendzonga{
+                                            margin: 0 auto;
+                                        }
+                                        #card_TheArchitecturalWork
+                                                {
+                                                    margin: 0 auto;
+                                        }
+                                        #card_HistoricCity{
+                                            margin: 0 auto;
+                                        }
+                                        #card_VictorianGothic{
+                                            margin: 0 auto;
+                                        }
+                                        #card_JaipurCity{
+                                            margin: 0 auto;
+                                        }
+                                        #card_KakatiyaRudreshwar{
+                                            margin: 0 auto;
+                                        }
+                                        #card_Dholavira{
+                                            margin: 0 auto;
+                                        }
+                                        #card_Santiniketan{
+                                            margin: 0 auto;
+                                        }
+                                        #card_Hoysalas{
+                                            margin: 0 auto;
+                                        }
+
+                                        .cards{
+                                            margin: 0 auto;
+                                        }
+                                        
+                                    }
+
+            /* other_pages_css */
+
+            .introduction{
+                max-width: 1350px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+                gap: 4.5rem;
+                margin: 3rem;
+                padding: 2rem;
+            }
+
+            .heading{
+                transition: all 0.3s linear 0s;
+                cursor: pointer;
+
+            }
+
+            .intro_duction{
+                font-size: 3.6rem;
+                font-weight: 600;
+                color: var(--text-color);
+                animation: top_to_down 1s forwards 0s;
+                margin-left: 1.2rem;
+            }
+
+            .heading:hover{
+
+                transform: scale(1.02);
+            }
+
+            @keyframes top_to_down {
+
+                0%{
+                    transform: translateY(-100%);
+                    opacity: 0;
+                }
+
+                50%{
+
+                    transform: translateY(-20%);
+                    opacity: 0.5;
+
+                }
+
+                100%{
+                    transform: translateY(0%);
+                    opacity: 1;
+                }
+
+                
+            }
+
+            .para_ajanta{
+                /* font-size: 1.3rem; */
+                font-weight: 500;
+                color: var(--text-color);
+                animation: left_to_right 0.6s forwards 0s;
+            }
+
+            @keyframes left_to_right {
+
+                0%{
+                    transform: translateX(-100%);
+                }
+
+                70%{
+                    transform: translateX(20%);
+
+                }
+
+                100%{
+                    transform: translateX(0);
+                }
+                
+            }
+
+           
+
+
+            .left_desc_part2{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                width: 50%;
+
+            }
+
+            .right_side_image{
+                position: relative;
+                height: 440px;
+                width: 440px;
+                border-radius: 2rem;
+                overflow: hidden;
+            }
+
+            .anajnata{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                border: 4px solid black;
+                
+            }
+
+            .right_side_image{
+
+                transition: all 0.8s linear 0s;
+
+            }
+
+            .right_side_image:hover{
+                transform: scale(1.02);
+                box-shadow: 0 60px 80px rgba(0,0,0,0.60), 0 45px 26px rgba(0,0,0,0.14);
+
+
+            }
+
+  
+
+            .image_caves{
+                height: 488px;
+                
+                overflow: hidden;
+                width: 600px;
+                border-radius: 5px;
+
+                
+            }
+
+            .image_caves2{
+                height: 488px;
+                width: 600px;
+                border-radius: 5px;
+               
+            }
+
+            .image_caves3{
+                height: 488px;
+                width: 600px;
+                border-radius: 5px;
+                
+            }
+
+            .image_caves4{
+                height: 488px;
+                width: 600px;
+                border-radius: 5px;
+                
+            }
+
+            .image_caves5{
+                height: 488px;
+                width: 790px;
+                border-radius: 5px;
+                
+            }
+
+            .image_caves6{
+                height: 488px;
+                width: 600px;
+                border-radius: 5px;
+               
+            }
+
+           
+
+            .different_images{
+               display: grid;
+               grid-template-columns: repeat(2,1fr);
+               grid-template-rows: repeat(3,1fr);
+               gap: 1.2rem;
+               margin-left: 3.5rem;
+               
+            }
+
+
+            .image_caves{
+                animation: left_2_right 2s forwards 0s;
+                
+            }
+
+            .image_caves2{
+                animation: left_2_right_ 2.5s forwards 0s;
+                
+
+            }
+
+            .image_caves3{
+                animation: left_2_right 2.7s forwards 0s;
+               
+
+            }
+
+            .image_caves4{
+                animation: left_2_right_ 3.2s forwards 0s;
+                
+
+            }
+
+            .image_caves5{
+                animation: left_2_right 3.5 forwards 0s;
+                
+
+            }
+
+            .image_caves6{
+                animation: left_2_right_ 3.96s forwards 0s;
+                
+                
+
+            }
+
+            @keyframes left_2_right {
+
+                0%{
+                    transform: translateX(-100%);
+                    opacity: 0;
+                }
+        
+                
+        
+                100%{
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+                 }
+
+                 @keyframes left_2_right_ {
+
+                    0%{
+                        transform: translateX(+100%);
+                        opacity: 0;
+                    }
+            
+                    
+            
+                    100%{
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+
+
+                    
+                 }
+
+            #common_cave{
+                /* border: 2px solid rgb(166, 12, 12);
+                border-radius: 1rem; */
+                overflow: hidden;
+            }
+
+           
+
+            .tetx_them{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                max-width: 100vw;
+                margin-top: 2rem;
+            }
+
+            .Outstanding{
+                margin-left: 3rem;
+            }
+
+            .para_caves{
+                max-width: 1300px;
+                font-weight: 400;
+                color: var(--text-color);
+                margin: 0 auto;
+            }
+
+            .avatarimage{
+                overflow-y: hidden;
+                overflow-x: hidden;
+                margin-left: 2rem;
+                
+            }
+
+            .review_main_content{
+                align-items: center;
+            }
+
+            .footer_descrip{
+                padding-bottom: 1.1rem;
+            }
+
+            
+
+            
